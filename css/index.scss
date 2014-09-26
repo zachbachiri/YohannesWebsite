@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+@import "bourbon/bourbon"; // or "bourbon" when in Rails
+@import "grid-settings";
+@import "neat/neat";
+
+body{
+	background-color: #FBFBFB;
+	font: 12pt Open Sans;
+	#header{
+		@include outer-container;
+		padding-top: 10px;
+		#logo {
+			width: 285px;
+			height: 78px;
+			background: url('images/logo.png');
+			background-repeat: none;
+			float: left;
+		}
+		#social_head{
+			float: right;
+			display: inline;
+			margin-top: 35px;
+			li{
+				display: inline;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}

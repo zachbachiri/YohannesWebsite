@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #FBFBFB;
+  font: 12pt Open Sans; }
+  body #header {
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px; }
+    body #header:after {
+      content: "";
+      display: table;
+      clear: both; }
+    body #header #logo {
+      width: 285px;
+      height: 78px;
+      background: url("images/logo.png");
+      background-repeat: none;
+      float: left; }
+    body #header #social_head {
+      float: right;
+      display: inline;
+      margin-top: 35px; }
+      body #header #social_head li {
+        display: inline; }
+      body #header #social_head a {
+        text-decoration: none;
+        color: black; }
