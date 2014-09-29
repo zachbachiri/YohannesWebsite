@@ -5,29 +5,85 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #FBFBFB;
-  font: 12pt Open Sans; }
-  body #header {
-    max-width: 930px;
+  background-color: #eeeeee;
+  font: 12pt Open Sans;
+  padding: 0;
+  margin: 0; }
+  body .header_wrap {
+    background-color: white;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%; }
+    body .header_wrap .header {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-bottom: 10px; }
+      body .header_wrap .header:after {
+        content: "";
+        display: table;
+        clear: both; }
+      body .header_wrap .header #logo {
+        width: 285px;
+        height: 78px;
+        background: url("images/logo.png");
+        background-repeat: none;
+        float: left; }
+      body .header_wrap .header .nav {
+        float: right;
+        display: inline;
+        clear: right;
+        margin: 0; }
+        body .header_wrap .header .nav li {
+          display: inline;
+          margin-left: 15px; }
+          body .header_wrap .header .nav li a {
+            text-decoration: none;
+            color: #446456; }
+      body .header_wrap .header #social_nav li a div {
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-left: 15px;
+        border-radius: 50%;
+        background-color: #eeeeee;
+        background-repeat: no-repeat;
+        background-position: center; }
+      body .header_wrap .header #social_nav li a div:hover {
+        background-color: #446456; }
+      body .header_wrap .header #facebook {
+        background: url(images/facebook.png); }
+      body .header_wrap .header #twitter {
+        background: url(images/twitter.png); }
+      body .header_wrap .header #instagram {
+        background: url(images/instagram.png); }
+      body .header_wrap .header #soundcloud {
+        background: url(images/soundcloud.png); }
+      body .header_wrap .header #spotify {
+        background: url(images/spotify.png); }
+  body .page_body {
+    padding-top: 108px;
+    clear: both;
+    max-width: 900px;
     margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px; }
-    body #header:after {
+    margin-right: auto; }
+    body .page_body:after {
       content: "";
       display: table;
       clear: both; }
-    body #header #logo {
-      width: 285px;
-      height: 78px;
-      background: url("images/logo.png");
-      background-repeat: none;
-      float: left; }
-    body #header #social_head {
-      float: right;
-      display: inline;
-      margin-top: 35px; }
-      body #header #social_head li {
-        display: inline; }
-      body #header #social_head a {
-        text-decoration: none;
-        color: black; }
+    body .page_body .page_element {
+      width: 100%; }
+    body .page_body #page_photo {
+      margin-top: 50px;
+      overflow: hidden; }
+      body .page_body #page_photo img {
+        width: 100%; }
+    body .page_body #page_soundcloud {
+      display: none;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto; }
+    body .page_body #page_about {
+      display: none; }

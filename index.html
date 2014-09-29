@@ -4,20 +4,79 @@
     <meta charset="utf-8">
     <title>Go Yohannes</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="css/images/favicon.ico" >
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
   <body>
-    
-    <header id="header">
-	  	<a href="#" id="logo"></a>
+    <div class="header_wrap">
+      <header class="header">
+  	  	<a href="#" id="logo"></a>
 
-	  	<ul id="social_head">
-	  		<li><a href="#">Facebook</a></li>
-	  		<li><a href="#">Twitter</a></li>
-	  		<li><a href="#">Instagram</a></li>
-	  		<li><a href="#">Soundcloud</a></li>
-	  		<li><a href="#">Spotify</a></li>
-	  	</ul>
-  	</header>
+        <ul class="nav" id="social_nav">
+          <li><a href="https://play.spotify.com/artist/53WODgtpPLw7dZHKFHSA9m"><div id="spotify"></div></a></li>
+          <li><a href="https://soundcloud.com/royaletheband"><div id="soundcloud"></div></a></li>
+          <li><a href="http://instagram.com/royaletheband"><div id="instagram"></div></a></li>
+          <li><a href="https://twitter.com/Royaletheband"><div id="twitter"></div></a></li>
+          <li><a href="https://www.facebook.com/royaletheband"><div id="facebook"></div></a></li>
+        </ul>
+
+        <ul class="nav" id="main_nav">
+          <li><a href="#" id="about">about</a></li>
+          <li><a href="#" id="music">music</a></li>
+          <li><a href="#" id="media">media</a></li>
+          <li><a href="#" id="contact">contact</a></li>
+        </ul>
+    	</header>
+    </div>
+    <div class="page_body">
+      <div id="page_photo" class="page_element"><img src="css/images/royale.png"></div>
+
+      <div id="page_soundcloud" class="page_element">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12590223&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+
+    <div id="page_about" class="page_element">
+      <h3>What Yohannes is all about</h3>
+      <p>Bacon ipsum dolor sit amet beef short ribs chicken, salami corned beef biltong fatback filet mignon spare ribs frankfurter turducken pastrami. Rump short loin boudin kevin porchetta bacon short ribs ribeye landjaeger sirloin. Filet mignon biltong chuck, short ribs strip steak pork belly flank turkey tri-tip corned beef sirloin short loin cow tongue. Drumstick kevin corned beef hamburger salami pork loin beef ribs jerky pork belly short ribs capicola flank ball tip rump cow. Tongue tail ground round short ribs chuck. Flank landjaeger ball tip, ground round tongue bacon pork chop filet mignon sirloin. Frankfurter pork loin kevin bresaola tail, fatback landjaeger short ribs pancetta chuck.
+
+Beef ribs pig strip steak doner flank. Ball tip landjaeger filet mignon kielbasa capicola shankle jowl chicken pastrami tail hamburger. Capicola kevin ham tri-tip boudin tail flank beef drumstick venison hamburger. Porchetta boudin meatball, landjaeger turducken kevin ham. Drumstick andouille ham ham hock ribeye ball tip, jerky kielbasa pork landjaeger fatback shank pork belly.
+
+Bresaola pork chop porchetta, kevin rump tail prosciutto ball tip pancetta salami. Strip steak shoulder tongue pancetta doner kielbasa jowl meatloaf. Hamburger fatback short ribs pork loin boudin, bresaola sirloin pastrami leberkas salami. Bresaola ball tip shank pork loin shankle tenderloin leberkas kevin spare ribs drumstick corned beef tongue.</p>
+    </div>
+
+    <script>
+    $( document ).ready(function() {
+      $( "#logo" ).click(function( event ) {
+        event.preventDefault();
+        $('.page_element').hide( "fast", function() {});
+        $('#page_photo').show( "fast", function() {});
+      });
+
+      $( "#about" ).click(function( event ) {
+        event.preventDefault();
+        $('.page_element').hide( "fast", function() {});
+        $('#page_about').show( "fast", function() {});
+      });
+
+      $( "#music" ).click(function( event ) {
+        event.preventDefault();
+        $('.page_element').hide( "fast", function() {});
+        $('#page_soundcloud').show( "fast", function() {});
+      });
+
+      $( "#media" ).click(function( event ) {
+        event.preventDefault();
+        $('.page_element').hide( "fast", function() {});
+        //$('#page_about').show( "fast", function() {});
+      });
+
+      $( "#contact" ).click(function( event ) {
+        event.preventDefault();
+        $('.page_element').hide( "fast", function() {});
+        //$('#page_about').show( "fast", function() {});
+      });
+    });
+    </script>
 
   </body>
 </html>

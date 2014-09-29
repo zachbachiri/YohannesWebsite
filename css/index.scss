@@ -3,30 +3,97 @@
 @import "grid-settings";
 @import "neat/neat";
 
+$background-grey: #EEE;
+$yohannes: #446456;
+
 body{
-	background-color: #FBFBFB;
+	background-color: $background-grey;
 	font: 12pt Open Sans;
-	#header{
-		@include outer-container;
-		padding-top: 10px;
-		#logo {
-			width: 285px;
-			height: 78px;
-			background: url('images/logo.png');
-			background-repeat: none;
-			float: left;
-		}
-		#social_head{
-			float: right;
-			display: inline;
-			margin-top: 35px;
-			li{
+	padding: 0;
+	margin: 0;
+	.header_wrap{
+		background-color: white;
+		margin-top: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		.header{
+			@include outer-container;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			#logo {
+				width: 285px;
+				height: 78px;
+				background: url('images/logo.png');
+				background-repeat: none;
+				float: left;
+			}
+			.nav{
+				float: right;
 				display: inline;
+				clear: right;
+				margin: 0;
+				li{
+					display: inline;
+					margin-left: 15px;
+					a{
+						text-decoration: none;
+						color: $yohannes;
+					}
+				}
 			}
-			a{
-				text-decoration: none;
-				color: black;
+			#social_nav li a div{
+				width: 30px;
+				height: 30px;
+				float: right;
+				margin-left: 15px;
+				border-radius: 50%; 
+				background-color: $background-grey;
+				background-repeat: no-repeat;
+				background-position: center; 
 			}
+			#social_nav li a div:hover{
+				background-color: $yohannes;
+			}
+			#facebook{
+				background: url(images/facebook.png);
+			}
+			#twitter{
+				background: url(images/twitter.png);
+			}
+			#instagram{
+				background: url(images/instagram.png);
+			}
+			#soundcloud{
+				background: url(images/soundcloud.png);
+			}
+			#spotify{
+				background: url(images/spotify.png);
+			}
+		}
+	}
+	.page_body{
+		padding-top: 108px;
+		clear: both;
+		@include outer-container;
+		.page_element{
+			width: 100%;
+		}
+		#page_photo{
+			margin-top: 50px;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+		#page_soundcloud{
+			display: none;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#page_about {
+			display: none;
 		}
 	}
 }
