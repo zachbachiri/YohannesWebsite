@@ -4,13 +4,16 @@
 @import "neat/neat";
 
 $background-grey: #EEE;
-$yohannes: #446456;
+$yohannes: #25b49c;
+$yohannes-hover: #078C92;
+$body-text: #333;
 
 body{
 	background-color: $background-grey;
 	font: 12pt Open Sans;
 	padding: 0;
 	margin: 0;
+	color: $body-text;
 	.header_wrap{
 		background-color: white;
 		margin-top: 0;
@@ -32,7 +35,7 @@ body{
 				float: right;
 				display: inline;
 				clear: right;
-				margin: 0;
+				margin: 7px 0 0 0;
 				li{
 					display: inline;
 					margin-left: 15px;
@@ -40,7 +43,13 @@ body{
 						text-decoration: none;
 						color: $yohannes;
 					}
+					a:hover{
+						color: $yohannes-hover;
+					}
 				}
+			}
+			#social_nav{
+				height: 30px;
 			}
 			#social_nav li a div{
 				width: 30px;
@@ -48,12 +57,12 @@ body{
 				float: right;
 				margin-left: 15px;
 				border-radius: 50%; 
-				background-color: $background-grey;
+				background-color: $yohannes;
 				background-repeat: no-repeat;
 				background-position: center; 
 			}
 			#social_nav li a div:hover{
-				background-color: $yohannes;
+				background-color: $yohannes-hover;
 			}
 			#facebook{
 				background: url(images/facebook.png);
@@ -78,9 +87,9 @@ body{
 		@include outer-container;
 		.page_element{
 			width: 100%;
+			margin-top: 50px;
 		}
 		#page_photo{
-			margin-top: 50px;
 			overflow: hidden;
 			img {
 				width: 100%;
@@ -88,12 +97,18 @@ body{
 		}
 		#page_soundcloud{
 			display: none;
-			margin-top: 50px;
 			margin-left: auto;
 			margin-right: auto;
 		}
 		#page_about {
 			display: none;
+		}
+		#page_contact{
+			display: none;
+			a{
+				color: $body-text;
+				text-decoration: none;
+			}
 		}
 	}
 }

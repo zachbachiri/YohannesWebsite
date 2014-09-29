@@ -13,11 +13,11 @@
   	  	<a href="#" id="logo"></a>
 
         <ul class="nav" id="social_nav">
-          <li><a href="https://play.spotify.com/artist/53WODgtpPLw7dZHKFHSA9m"><div id="spotify"></div></a></li>
-          <li><a href="https://soundcloud.com/royaletheband"><div id="soundcloud"></div></a></li>
-          <li><a href="http://instagram.com/royaletheband"><div id="instagram"></div></a></li>
-          <li><a href="https://twitter.com/Royaletheband"><div id="twitter"></div></a></li>
-          <li><a href="https://www.facebook.com/royaletheband"><div id="facebook"></div></a></li>
+          <li><a target="_blank" href="https://play.spotify.com/artist/53WODgtpPLw7dZHKFHSA9m"><div id="spotify"></div></a></li>
+          <li><a target="_blank" href="https://soundcloud.com/royaletheband"><div id="soundcloud"></div></a></li>
+          <li><a target="_blank" href="http://instagram.com/royaletheband"><div id="instagram"></div></a></li>
+          <li><a target="_blank" href="https://twitter.com/Royaletheband"><div id="twitter"></div></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/royaletheband"><div id="facebook"></div></a></li>
         </ul>
 
         <ul class="nav" id="main_nav">
@@ -36,7 +36,7 @@
     </div>
 
     <div id="page_about" class="page_element">
-      <h3>What Yohannes is all about</h3>
+      <h2>What Yohannes is all about</h2>
       <p>Bacon ipsum dolor sit amet beef short ribs chicken, salami corned beef biltong fatback filet mignon spare ribs frankfurter turducken pastrami. Rump short loin boudin kevin porchetta bacon short ribs ribeye landjaeger sirloin. Filet mignon biltong chuck, short ribs strip steak pork belly flank turkey tri-tip corned beef sirloin short loin cow tongue. Drumstick kevin corned beef hamburger salami pork loin beef ribs jerky pork belly short ribs capicola flank ball tip rump cow. Tongue tail ground round short ribs chuck. Flank landjaeger ball tip, ground round tongue bacon pork chop filet mignon sirloin. Frankfurter pork loin kevin bresaola tail, fatback landjaeger short ribs pancetta chuck.
 
 Beef ribs pig strip steak doner flank. Ball tip landjaeger filet mignon kielbasa capicola shankle jowl chicken pastrami tail hamburger. Capicola kevin ham tri-tip boudin tail flank beef drumstick venison hamburger. Porchetta boudin meatball, landjaeger turducken kevin ham. Drumstick andouille ham ham hock ribeye ball tip, jerky kielbasa pork landjaeger fatback shank pork belly.
@@ -44,36 +44,42 @@ Beef ribs pig strip steak doner flank. Ball tip landjaeger filet mignon kielbasa
 Bresaola pork chop porchetta, kevin rump tail prosciutto ball tip pancetta salami. Strip steak shoulder tongue pancetta doner kielbasa jowl meatloaf. Hamburger fatback short ribs pork loin boudin, bresaola sirloin pastrami leberkas salami. Bresaola ball tip shank pork loin shankle tenderloin leberkas kevin spare ribs drumstick corned beef tongue.</p>
     </div>
 
+    <div id="page_contact" class="page_element">
+      <h2>Drop us a line!</h2>
+      <a href="mailto:royaletheband@gmail.com" target="none">royaletheband@gmail.com</a>
+
+    </div>
+
     <script>
     $( document ).ready(function() {
       $( "#logo" ).click(function( event ) {
         event.preventDefault();
-        $('.page_element').hide( "fast", function() {});
-        $('#page_photo').show( "fast", function() {});
+        $('.page_element').hide();
+        $('#page_photo').show();
       });
 
       $( "#about" ).click(function( event ) {
         event.preventDefault();
-        $('.page_element').hide( "fast", function() {});
-        $('#page_about').show( "fast", function() {});
+        $('.page_element').hide();
+        $('#page_about').show();
       });
 
       $( "#music" ).click(function( event ) {
         event.preventDefault();
-        $('.page_element').hide( "fast", function() {});
-        $('#page_soundcloud').show( "fast", function() {});
+        $('.page_element').hide();
+        $('#page_soundcloud').show();
       });
 
       $( "#media" ).click(function( event ) {
         event.preventDefault();
-        $('.page_element').hide( "fast", function() {});
-        //$('#page_about').show( "fast", function() {});
+        $('.page_element').hide();
+        //$('#page_about').show();
       });
 
       $( "#contact" ).click(function( event ) {
         event.preventDefault();
-        $('.page_element').hide( "fast", function() {});
-        //$('#page_about').show( "fast", function() {});
+        $('.page_element').hide();
+        $('#page_contact').show();
       });
     });
     </script>
