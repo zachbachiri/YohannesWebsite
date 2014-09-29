@@ -4,9 +4,10 @@
 @import "neat/neat";
 
 $background-grey: #EEE;
-$yohannes: #25b49c;
-$yohannes-hover: #078C92;
+$yohannes: #00abff;
+$yohannes-hover: #007aff;
 $body-text: #333;
+$mobile: new-breakpoint(max-width 700px 12);
 
 body{
 	background-color: $background-grey;
@@ -17,25 +18,35 @@ body{
 	.header_wrap{
 		background-color: white;
 		margin-top: 0;
-		position: fixed;
 		top: 0;
 		width: 100%;
+		padding: 0 15px 0 15px;
 		.header{
 			@include outer-container;
 			padding-top: 20px;
 			padding-bottom: 10px;
+			@include media($mobile){
+				text-align: center;
+			}
 			#logo {
 				width: 285px;
 				height: 78px;
 				background: url('images/logo.png');
 				background-repeat: none;
 				float: left;
+				@include media($mobile){
+					float: none;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+				}
 			}
 			.nav{
 				float: right;
 				display: inline;
 				clear: right;
 				margin: 7px 0 0 0;
+				padding: 0;
 				li{
 					display: inline;
 					margin-left: 15px;
@@ -47,19 +58,37 @@ body{
 						color: $yohannes-hover;
 					}
 				}
+				@include media($mobile){
+					padding-left: auto;
+					padding-right: auto;
+					text-align: center;
+					float: none;
+					display: block;
+					text-align: center;
+					width: 100%;
+					li{
+						margin-left: 7px;
+						margin-right: 7px;
+					}
+				}
 			}
 			#social_nav{
 				height: 30px;
+				li{
+					float: right;
+					@include media($mobile){
+						float: none;
+					}
+				}
 			}
 			#social_nav li a div{
 				width: 30px;
 				height: 30px;
-				float: right;
-				margin-left: 15px;
 				border-radius: 50%; 
 				background-color: $yohannes;
 				background-repeat: no-repeat;
 				background-position: center; 
+				display: inline-block;
 			}
 			#social_nav li a div:hover{
 				background-color: $yohannes-hover;
@@ -82,8 +111,8 @@ body{
 		}
 	}
 	.page_body{
-		padding-top: 108px;
 		clear: both;
+		padding: 0 15px 0 15px;
 		@include outer-container;
 		.page_element{
 			width: 100%;
