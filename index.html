@@ -9,9 +9,7 @@
   </head>
   <body>
     <div class="header_wrap">
-      <header class="header">
-  	  	<a href="#" id="logo"></a>
-
+      <div class="header">
         <ul class="nav" id="social_nav">
           <li><a target="_blank" href="https://play.spotify.com/artist/53WODgtpPLw7dZHKFHSA9m"><div id="spotify"></div></a></li>
           <li><a target="_blank" href="https://soundcloud.com/royaletheband"><div id="soundcloud"></div></a></li>
@@ -26,13 +24,15 @@
           <li><a href="#" id="media">media</a></li>
           <li><a href="#" id="contact">contact</a></li>
         </ul>
-    	</header>
+        <a href="#" id="logo"></a>
+
+    	</div>
     </div>
     <div class="page_body">
-      <div id="page_photo" class="page_element"><img src="css/images/royale.png"></div>
+      <div id="page_home" class="page_element"><iframe id="soundcloud" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12590223&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
 
       <div id="page_soundcloud" class="page_element">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12590223&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <iframe id="soundcloud" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12590223&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
     </div>
 
     <div id="page_about" class="page_element">
@@ -43,6 +43,8 @@
 
       <p>Bresaola pork chop porchetta, kevin rump tail prosciutto ball tip pancetta salami. Strip steak shoulder tongue pancetta doner kielbasa jowl meatloaf. Hamburger fatback short ribs pork loin boudin, bresaola sirloin pastrami leberkas salami. Bresaola ball tip shank pork loin shankle tenderloin leberkas kevin spare ribs drumstick corned beef tongue.</p>
     </div>
+
+    <div id="page_media" class="page_element"><img src="css/images/cover.png"></div>
 
     <div id="page_contact" class="page_element">
       <h2>Drop us a line!</h2>
@@ -55,7 +57,7 @@
       $( "#logo" ).click(function( event ) {
         event.preventDefault();
         $('.page_element').hide();
-        $('#page_photo').show();
+        $('#page_home').show();
       });
 
       $( "#about" ).click(function( event ) {
@@ -73,7 +75,7 @@
       $( "#media" ).click(function( event ) {
         event.preventDefault();
         $('.page_element').hide();
-        //$('#page_about').show();
+        $('#page_media').show();
       });
 
       $( "#contact" ).click(function( event ) {
