@@ -14,6 +14,8 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto; }
+  body #main_nav li a.active {
+    color: #aaaaaa; }
   body .header_wrap {
     background-color: white;
     margin-top: 0;
