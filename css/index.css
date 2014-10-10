@@ -79,18 +79,26 @@ body {
         background-color: #333333;
         background-repeat: no-repeat;
         background-position: center; }
-      body .header_wrap .header #social_nav li a div:hover {
-        background-color: #aaaaaa; }
       body .header_wrap .header #facebook {
         background: url(images/facebook.png); }
+      body .header_wrap .header #facebook:hover {
+        background-color: #3b5998; }
       body .header_wrap .header #twitter {
         background: url(images/twitter.png); }
+      body .header_wrap .header #twitter:hover {
+        background-color: #00aced; }
       body .header_wrap .header #instagram {
         background: url(images/instagram.png); }
+      body .header_wrap .header #instagram:hover {
+        background-color: #517fa4; }
       body .header_wrap .header #soundcloud {
         background: url(images/soundcloud.png); }
+      body .header_wrap .header #soundcloud:hover {
+        background-color: #f70; }
       body .header_wrap .header #spotify {
         background: url(images/spotify.png); }
+      body .header_wrap .header #spotify:hover {
+        background-color: #81b71a; }
   body .page_body {
     clear: both;
     background-color: #eeeeee; }

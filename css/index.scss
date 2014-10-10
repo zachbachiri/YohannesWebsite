@@ -95,23 +95,35 @@ body{
 				background-repeat: no-repeat;
 				background-position: center;
 			}
-			#social_nav li a div:hover{
-				background-color: $yohannes-hover;
-			}
 			#facebook{
 				background: url(images/facebook.png);
+			}
+			#facebook:hover{
+				background-color: #3b5998;
 			}
 			#twitter{
 				background: url(images/twitter.png);
 			}
+			#twitter:hover{
+				background-color: #00aced;
+			}
 			#instagram{
 				background: url(images/instagram.png);
+			}
+			#instagram:hover{
+				background-color: #517fa4;
 			}
 			#soundcloud{
 				background: url(images/soundcloud.png);
 			}
+			#soundcloud:hover{
+				background-color: #f70;
+			}
 			#spotify{
 				background: url(images/spotify.png);
+			}
+			#spotify:hover{
+				background-color: #81b71a;
 			}
 		}
 	}
