@@ -11,7 +11,6 @@ $mobile: new-breakpoint(max-width 800px 12);
 
 body{
 	font: 12pt Open Sans;
-	padding: 0 4% 0 4%;
 	margin: 0;
 	color: $body-text;
 	#soundcloud{
@@ -28,16 +27,18 @@ body{
 		margin-top: 0;
 		top: 0;
 		width: 100%;
-		padding: 0;
+		padding: 0 4% 0 4%;
+		position: fixed;
+		background-color: white;
 		.header{
 			width: 100%;
-			padding: 25px 0 20px 0;
+			padding: 20px 0 10px 0;
 			@include media($mobile){
 				text-align: center;
 			}
 			#logo {
 				width: 200px;
-				height: 60px;
+				height: 70px;
 				display: block;
 				background: url('images/logo.png');
 				background-size: contain;
@@ -129,7 +130,7 @@ body{
 	}
 	.page_body{
 		clear: both;
-		background-color: $background-grey;
+		padding-top: 85px;
 		.page_element{
 			width: 100%;
 			padding: 40px;
@@ -149,7 +150,9 @@ body{
 			display: none;
 			overflow: hidden;
 			img {
-				width: 100%;
+				width: 600px;
+				margin-left: auto; 
+				margin-right: auto;
 			}
 		}
 		#page_contact{
