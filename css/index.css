@@ -4,18 +4,19 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
+html, body {
   font: 12pt Open Sans;
   margin: 0;
-  color: #333333; }
-  body #soundcloud {
+  color: #333333;
+  height: 100%; }
+  html #soundcloud, body #soundcloud {
     max-width: 400px;
     display: block;
     margin-right: auto;
     margin-left: auto; }
-  body #main_nav li a.active {
+  html #main_nav li a.active, body #main_nav li a.active {
     color: #aaaaaa; }
-  body .header_wrap {
+  html .header_wrap, body .header_wrap {
     background-color: white;
     margin-top: 0;
     top: 0;
@@ -23,13 +24,13 @@ body {
     padding: 0 4% 0 4%;
     position: fixed;
     background-color: white; }
-    body .header_wrap .header {
+    html .header_wrap .header, body .header_wrap .header {
       width: 100%;
       padding: 20px 0 10px 0; }
       @media screen and (max-width: 800px) {
-        body .header_wrap .header {
+        html .header_wrap .header, body .header_wrap .header {
           text-align: center; } }
-      body .header_wrap .header #logo {
+      html .header_wrap .header #logo, body .header_wrap .header #logo {
         width: 200px;
         height: 70px;
         display: block;
@@ -38,41 +39,41 @@ body {
         background-repeat: no-repeat;
         margin-left: auto;
         margin-right: auto; }
-      body .header_wrap .header .nav {
+      html .header_wrap .header .nav, body .header_wrap .header .nav {
         margin: 15px 0 0 0;
         padding: 0;
         font-size: 13pt;
         height: 30px; }
-        body .header_wrap .header .nav li {
+        html .header_wrap .header .nav li, body .header_wrap .header .nav li {
           display: inline;
           margin-left: 15px; }
-          body .header_wrap .header .nav li a {
+          html .header_wrap .header .nav li a, body .header_wrap .header .nav li a {
             text-decoration: none;
             color: #333333; }
-          body .header_wrap .header .nav li a:hover {
+          html .header_wrap .header .nav li a:hover, body .header_wrap .header .nav li a:hover {
             color: #aaaaaa; }
         @media screen and (max-width: 800px) {
-          body .header_wrap .header .nav {
+          html .header_wrap .header .nav, body .header_wrap .header .nav {
             margin-left: auto;
             margin-right: auto;
             text-align: center;
             text-align: center;
             width: 100%; }
-            body .header_wrap .header .nav li {
+            html .header_wrap .header .nav li, body .header_wrap .header .nav li {
               float: none;
               margin-left: 7px;
               margin-right: 7px; } }
-      body .header_wrap .header #main_nav {
+      html .header_wrap .header #main_nav, body .header_wrap .header #main_nav {
         float: right; }
         @media screen and (max-width: 800px) {
-          body .header_wrap .header #main_nav {
+          html .header_wrap .header #main_nav, body .header_wrap .header #main_nav {
             float: none; } }
-      body .header_wrap .header #social_nav {
+      html .header_wrap .header #social_nav, body .header_wrap .header #social_nav {
         float: left; }
         @media screen and (max-width: 800px) {
-          body .header_wrap .header #social_nav {
+          html .header_wrap .header #social_nav, body .header_wrap .header #social_nav {
             float: none; } }
-      body .header_wrap .header #social_nav li a div {
+      html .header_wrap .header #social_nav li a div, body .header_wrap .header #social_nav li a div {
         width: 30px;
         height: 30px;
         display: inline-block;
@@ -80,56 +81,61 @@ body {
         background-color: #333333;
         background-repeat: no-repeat;
         background-position: center; }
-      body .header_wrap .header #facebook {
+      html .header_wrap .header #facebook, body .header_wrap .header #facebook {
         background: url(images/facebook.png); }
-      body .header_wrap .header #facebook:hover {
+      html .header_wrap .header #facebook:hover, body .header_wrap .header #facebook:hover {
         background-color: #3b5998; }
-      body .header_wrap .header #twitter {
+      html .header_wrap .header #twitter, body .header_wrap .header #twitter {
         background: url(images/twitter.png); }
-      body .header_wrap .header #twitter:hover {
+      html .header_wrap .header #twitter:hover, body .header_wrap .header #twitter:hover {
         background-color: #00aced; }
-      body .header_wrap .header #instagram {
+      html .header_wrap .header #instagram, body .header_wrap .header #instagram {
         background: url(images/instagram.png); }
-      body .header_wrap .header #instagram:hover {
+      html .header_wrap .header #instagram:hover, body .header_wrap .header #instagram:hover {
         background-color: #517fa4; }
-      body .header_wrap .header #soundcloud {
+      html .header_wrap .header #soundcloud, body .header_wrap .header #soundcloud {
         background: url(images/soundcloud.png); }
-      body .header_wrap .header #soundcloud:hover {
+      html .header_wrap .header #soundcloud:hover, body .header_wrap .header #soundcloud:hover {
         background-color: #f70; }
-      body .header_wrap .header #spotify {
+      html .header_wrap .header #spotify, body .header_wrap .header #spotify {
         background: url(images/spotify.png); }
-      body .header_wrap .header #spotify:hover {
+      html .header_wrap .header #spotify:hover, body .header_wrap .header #spotify:hover {
         background-color: #81b71a; }
-  body .page_body {
+  html .page_body, body .page_body {
     clear: both;
-    padding-top: 85px; }
-    body .page_body .page_element {
+    padding-top: 85px;
+    background-color: rgba(0, 0, 0, 0.05);
+    min-height: 100%; }
+    html .page_body .page_element, body .page_body .page_element {
       width: 100%;
       padding: 40px;
       max-width: 900px;
       margin-left: auto;
       margin-right: auto; }
-      body .page_body .page_element:after {
+      html .page_body .page_element:after, body .page_body .page_element:after {
         content: "";
         display: table;
         clear: both; }
-    body .page_body #page_soundcloud {
+    html .page_body #page_soundcloud, body .page_body #page_soundcloud {
       display: none;
       margin-left: auto;
       margin-right: auto; }
-    body .page_body #page_about {
+    html .page_body #page_about, body .page_body #page_about {
       display: none; }
-    body .page_body #page_media {
+      html .page_body #page_about p, body .page_body #page_about p {
+        margin-bottom: 25px; }
+    html .page_body #page_media, body .page_body #page_media {
       display: none;
       overflow: hidden; }
-    body .page_body .media_image {
+    html .page_body .media_image, body .page_body .media_image {
       width: 600px;
       margin-left: auto;
-      margin-right: auto; }
-      body .page_body .media_image img {
+      margin-right: auto;
+      margin-bottom: 25px; }
+      html .page_body .media_image img, body .page_body .media_image img {
         width: 100%; }
-    body .page_body #page_contact {
+    html .page_body #page_contact, body .page_body #page_contact {
       display: none; }
-      body .page_body #page_contact a {
+      html .page_body #page_contact a, body .page_body #page_contact a {
         color: #333333;
         text-decoration: none; }
