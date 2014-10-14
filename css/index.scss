@@ -149,15 +149,16 @@ body{
 		#page_media{
 			display: none;
 			overflow: hidden;
-			.media_image {
-				width: 600px;
-				margin-left: auto; 
-				margin-right: auto;
-				img {
-					width: 100%;
-				}
+		}
+		.media_image {
+			width: 600px;
+			margin-left: auto; 
+			margin-right: auto;
+			img {
+				width: 100%;
 			}
 		}
+		
 		#page_contact{
 			display: none;
 			a{

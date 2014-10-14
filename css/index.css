@@ -122,12 +122,12 @@ body {
     body .page_body #page_media {
       display: none;
       overflow: hidden; }
-      body .page_body #page_media .media_image {
-        width: 600px;
-        margin-left: auto;
-        margin-right: auto; }
-        body .page_body #page_media .media_image img {
-          width: 100%; }
+    body .page_body .media_image {
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto; }
+      body .page_body .media_image img {
+        width: 100%; }
     body .page_body #page_contact {
       display: none; }
       body .page_body #page_contact a {
