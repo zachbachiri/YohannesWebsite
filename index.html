@@ -6,8 +6,11 @@
     <meta name="description" content="Yohannes is a smattering of genres with a sense of humor and a desire to change the world for the better">
     <meta name="keywords" content="Yohannes,Band,Boston,Music,Who is Yohannes">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
     <link rel="shortcut icon" href="css/images/favicon.ico" >
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -23,41 +26,56 @@
     <h1 style="display:none;">Yohannes</h1>
     <div class="header_wrap">
       <div class="header">
-        <ul class="nav" id="social_nav">
-          <li><a target="_blank" href="https://play.spotify.com/album/1mSwVr4DwRnVqpUBUFzvg3"><div id="spotify"></div></a></li>
-          <li><a target="_blank" href="https://soundcloud.com/whoisyohannes"><div id="soundcloud"></div></a></li>
-          <li><a target="_blank" href="http://instagram.com/whoisyohannes"><div id="instagram"></div></a></li>
-          <li><a target="_blank" href="https://twitter.com/whoisyohannes"><div id="twitter"></div></a></li>
-          <li><a target="_blank" href="https://www.facebook.com/whoisyohannes"><div id="facebook"></div></a></li>
-        </ul>
+        <div class="nav_wrap">
+          <ul class="nav" id="social_nav">
+            <li><a target="_blank" href="https://play.spotify.com/album/1mSwVr4DwRnVqpUBUFzvg3"><div id="spotify"></div></a></li>
+            <li><a target="_blank" href="https://soundcloud.com/whoisyohannes"><div id="soundcloud"></div></a></li>
+            <li><a target="_blank" href="http://instagram.com/whoisyohannes"><div id="instagram"></div></a></li>
+            <li><a target="_blank" href="https://twitter.com/whoisyohannes"><div id="twitter"></div></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/whoisyohannes"><div id="facebook"></div></a></li>
+          </ul>
 
-        <ul class="nav" id="main_nav">
-          <li><a href="#" id="about">about</a></li>
-          <li><a href="#" id="music">music</a></li>
-          <li><a href="#" id="media">media</a></li>
-          <li><a href="#" id="contact">contact</a></li>
-        </ul>
-        <a href="#" id="logo"></a>
+          <ul class="nav" id="main_nav">
+            <li><a href="#" id="about">about</a></li>
+            <li><a href="#" id="music">music</a></li>
+            <li><a href="#" id="media">media</a></li>
+            <li><a href="#" id="contact">contact</a></li>
+          </ul>
+        </div>
+
+        <a href="#" id="logo"><img src="css/images/logo.png"></a>
 
     	</div>
     </div>
     <div class="page_body">
-      <div id="page_home" class="page_element"><iframe id="soundcloud" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12590223&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
+      <div id="page_home" class="page_element">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/124980926&amp;color=4fc3f7&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
-      <div id="page_soundcloud" class="page_element">
-        <iframe id="soundcloud" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12590223&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <iframe style="margin-top:50px;" width="930" height="525" src="https://www.youtube.com/embed/SDNLorFH3D0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div id="page_soundcloud" class="page_element"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12590223&amp;color=4fc3f7&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></iframe>
     </div>
 
     <div id="page_about" class="page_element">
-      <h2>Who is Yohannes?</h2>
-      <p>Yohannes is a group of four optimistic multi-instrumentalists who hope to use their music to make the world a better, more equal place. Named after their Ethiopian maintenance man, Yohannes was born in Boston in 2014. Band members Alex, Eli, Keenan and Zach bring their wide-ranging, conscious and subconscious influences from folk, rock, electronic, hip-hop, and jazz together to create a sound that is truly original.</p>
-      <div class="media_image"><img src="css/images/y2.jpg"></div>
+      <div class="about_text">
+        <h2>Who is Yohannes?</h2>
+        <p>Yohannes is a group of four optimistic multi-instrumentalists who hope to use their music to make the world a better, more equal place. Named after their Ethiopian maintenance man, Yohannes was born in Boston in 2014. Band members Alex, Eli, Keenan and Zach bring their wide-ranging, conscious and subconscious influences from folk, rock, electronic, hip-hop, and jazz together to create a sound that is truly original.</p>
+      </div>
+      <div class="about_image"><img src="css/images/y2.jpg"></div>
     </div>
 
     <div id="page_media" class="page_element">
-      <div class="media_image"><img src="css/images/y2.jpg"></div>
-      <div class="media_image"><img src="css/images/y1.jpg"></div>
-      <div class="media_image"><img src="css/images/cover.png"></div>
+      <a class="media_image" rel="gallery1" href="css/images/y1.jpg"><img src="css/images/y1.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y2.jpg"><img src="css/images/y2.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y3.jpg"><img src="css/images/y3.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y4.jpg"><img src="css/images/y4.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y5.jpg"><img src="css/images/y5.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y6.jpg"><img src="css/images/y6.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y7.jpg"><img src="css/images/y7.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y8.jpg"><img src="css/images/y8.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y9.jpg"><img src="css/images/y9.jpg"></a>
+      <a class="media_image" rel="gallery1" href="css/images/y10.jpg"><img src="css/images/y10.jpg"></a>
     </div>
 
     <div id="page_contact" class="page_element">
@@ -107,6 +125,18 @@
         $('#page_contact').show();
       });
 
+    });
+    </script>
+
+    <script>
+    $(document).ready(function() {
+      $(".media_image").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        nextEffect  : 'fade',
+        prevEffect  : 'fade',
+        padding     : 0,
+      });
     });
     </script>
 
