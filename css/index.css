@@ -30,7 +30,7 @@ html, body {
     top: 0;
     width: 100%;
     position: fixed;
-    background-color: #29b6f6; }
+    background-color: #03a9f4; }
     html .header_wrap .header, body .header_wrap .header {
       width: 930px;
       margin-left: auto;
@@ -41,7 +41,7 @@ html, body {
         html .header_wrap .header, body .header_wrap .header {
           text-align: center; } }
       html .header_wrap .header #logo, body .header_wrap .header #logo {
-        width: 250px;
+        width: 300px;
         height: auto;
         display: inline-block;
         float: left;
