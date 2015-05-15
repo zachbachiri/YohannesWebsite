@@ -13,7 +13,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: scroll; }
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
   html .header, body .header {
     height: 75px;
     position: fixed;
