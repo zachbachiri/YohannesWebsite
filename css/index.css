@@ -30,7 +30,6 @@ html, body {
       float: right; }
       html .header .navigation .navigation_item, body .header .navigation .navigation_item {
         display: inline;
-        float: right;
         padding-left: 25px; }
         html .header .navigation .navigation_item a, body .header .navigation .navigation_item a {
           color: white;
