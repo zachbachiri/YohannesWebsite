@@ -52,7 +52,7 @@ html, body {
     position: relative;
     margin: 0;
     padding: 0;
-    overflow: auto; }
+    overflow: scroll; }
     html .page_body .top_section, body .page_body .top_section {
       min-height: 100%;
       position: relative;
