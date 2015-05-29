@@ -36,7 +36,8 @@ html, body {
         html .header .navigation .navigation_item a, body .header .navigation .navigation_item a {
           color: white;
           text-decoration: none;
-          font-size: 18px; }
+          font-size: 18px;
+          transition: 0.2s; }
         html .header .navigation .navigation_item a:hover, body .header .navigation .navigation_item a:hover {
           color: #e53c37; }
     html .header .logo, body .header .logo {
