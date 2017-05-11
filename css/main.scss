@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "CineRegular";
+    src: url("fonts/Cine-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "CineLight";
+    src: url("fonts/Cine-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "CineBold";
+    src: url("fonts/Cine-Bold.woff") format("woff");
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i');
+
+html, body{
+    font-family: 'CineRegular', 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    .page_container {
+        margin: 0 0;
+        padding: 5vw 5vw;
+        min-height: 100%;
+        height: auto;
+        background-color: #f2f6f9;
+        text-align: left;
+        color: #303030;
+        h1{
+            font-size: 3vw;
+            font-weight: 400;
+            font-family: 'CineBold', 'Roboto', sans-serif;
+        }
+        h1 {
+            color: #303030;
+        }
+        a {
+            text-decoration: none;
+            font-size: 15vw;
+            font-weight: 600;
+            margin: 1vw 0;
+        }
+        a:hover {
+            //opacity: .9;
+            text-decoration: underline;
+        }
+        a.blue{
+            color: #3271b9; //blue
+        }
+        a.yellow{
+            color: #efd724; //yellow
+        }
+        a.red{
+            color: #ee3033; //red
+        }
+        a.black{
+            color: #303030; //black
+        }
+    }
+}
